@@ -1,0 +1,55 @@
+
+.cardfull {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: bisque;
+    padding: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow wrapping of the flex items */
+  }
+
+  .heading-card {
+    background-color: rgb(198, 213, 208);
+    padding: 10px;
+    height: 150px;
+    width: 200px;
+    margin-right: 40px;
+    text-align: center;
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+
+  .card-title {
+    color: black;
+    font-size: 30px;
+    margin: 0; /* Remove default margin */
+  }
+
+  .month {
+    background-color: orangered;
+    color: white;
+    padding: 2px;
+    width: 100px;
+    border-radius: 25px;
+    margin: 10px auto 0; /* Center the month and add top margin */
+  }
+
+  .days {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Create a grid with 5 columns */
+    gap: 20px; /* Space between the buttons */
+    background-color: beige;
+  }
+
+  .day {
+    background-color: rgb(145, 133, 133);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .day:hover {
+    background-color: darkgray; /* Change color on hover */
+  }
