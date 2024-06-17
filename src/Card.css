@@ -1,64 +1,87 @@
-
 .cardfull {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: bisque;
-    padding: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap; /* Allow wrapping of the flex items */
-  }
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(236, 252, 254);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 25px;
+  flex-wrap: wrap; /* Allow wrapping of the flex items */
+  position: relative; /* Add relative positioning */
+}
 
-  .heading-card {
-    background-color: rgb(198, 213, 208);
-    padding: 10px;
-    height: 150px;
-    width: 200px;
-    margin-right: 40px;
-    text-align: center;
-    flex-shrink: 0; /* Prevent shrinking */
-  }
+.heading-card {
+  background-color: rgb(247, 220, 245);
+  padding: 10px;
+  height: 150px;
+  width: 200px;
+  margin-right: 40px;
+  text-align: center;
+  border-radius: 25px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
 
-  .card-title {
-    color: black;
-    font-size: 30px;
-    margin: 0; /* Remove default margin */
-  }
+.card-title {
+  color: black;
+  font-size: 30px;
+  margin: 0;
+  margin-top: 20px; /* Remove default margin */
+}
 
-  .month {
-    background-color: orangered;
-    color: white;
-    padding: 2px;
-    width: 100px;
-    border-radius: 25px;
-    margin: 10px auto 0; /* Center the month and add top margin */
-  }
+.month {
+  background-color: orangered;
+  color: white;
+  padding: 2px;
+  width: 100px;
+  border-radius: 25px;
+  margin: 10px auto 0; /* Center the month and add top margin */
+}
 
-  .days {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); /* Create a grid with 5 columns */
-    gap: 20px; /* Space between the buttons */
-    background-color: beige;
-  }
+.days {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(60px, 1fr)); /* Create a responsive grid */
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
 
-  .day {
-    background-color: rgb(145, 133, 133);
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-  }
+.day {
+  background-color: rgb(247, 247, 247);
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  border: 1px solid rgb(137, 137, 166);
+}
 
-  .day:hover {
-    background-color: darkgray; /* Change color on hover */
-  }
+.day.completed {
+  background-color: rgb(49, 185, 171);
+  color: white;
+}
 
-  .cut{
-    background-color: red;
-    border-radius: 50%;
-    height:25px;
-    width: 25px;
-    padding:2px;
-    float: right;
-  }
+.day:hover {
+  background-color: darkgray; /* Change color on hover */
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.cut {
+  background-color: red;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  margin-top: 0;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
