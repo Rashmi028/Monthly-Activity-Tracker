@@ -1,7 +1,11 @@
 import './Card.css'
 
- function Card({title}){
+ function Card({title,onDelete }){
     const currentMonth = new Date().toLocaleString('default', { month: 'long' });
+
+    const deleteActivity=()=>{
+
+    }
     return(
 <>
 <div className='cardfull'>
@@ -14,6 +18,10 @@ import './Card.css'
             <button key={i} className='day'>{i + 1}</button>
           ))}
 
+</div>
+
+<div className='cross'>
+   <button onClick={onDelete} className='cut'><b>X</b></button> 
 </div>
 </div>
 </>

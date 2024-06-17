@@ -53,3 +53,12 @@
   .day:hover {
     background-color: darkgray; /* Change color on hover */
   }
+
+  .cut{
+    background-color: red;
+    border-radius: 50%;
+    height:25px;
+    width: 25px;
+    padding:2px;
+    float: right;
+  }
